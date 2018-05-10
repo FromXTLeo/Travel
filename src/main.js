@@ -7,9 +7,12 @@ import 'styles/reset.css';
 import 'styles/border.css';
 import 'styles/iconfont.css';
 import fastclick from 'fastclick'
+import VueAwesomeSwiper from 'vue-awesome-swiper'
+import 'swiper/dist/css/swiper.css'
 //解决某些机型click事件延迟bug
 fastclick.attach(document.body)
 Vue.config.productionTip = false
+Vue.use(VueAwesomeSwiper)
 
 /* eslint-disable no-new */
 new Vue({
