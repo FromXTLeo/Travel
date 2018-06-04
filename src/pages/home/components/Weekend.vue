@@ -3,7 +3,7 @@
         <div class="title">热销推荐</div>
         <div>
             <ul>
-                <li class="border-bottom item" v-for="item in recommendList" :key="item.key">
+                <li class="border-bottom item" v-for="item in weekendList" :key="item.key">
                     <img class="item-img" :src="item.itemsrc" alt="">
                     <div class="item-content">
                         <p class="item-content-title">{{item.itemtitle}}</p>
@@ -18,12 +18,11 @@
 <script>
 export default {
     data(){
-        return{
-            
+        return{       
       }
-    },
+  },
     props:{
-       recommendList:'' 
+        weekendList:""
     }
 }
 </script>
