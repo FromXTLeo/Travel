@@ -1,10 +1,10 @@
 <template>
     <section>        
         <home-header></home-header>
-        <home-swiper :imgList="this.data.imgList"></home-swiper>
-        <home-icons :iconList="this.data.iconList"></home-icons>
-        <home-recommend :recommendList="this.data.recommendList"></home-recommend>
-        <home-weekend :weekendList="this.data.weekendList"></home-weekend>
+        <home-swiper :imgList="data.imgList"></home-swiper>
+        <home-icons :iconList="data.iconList"></home-icons>
+        <home-recommend :recommendList="data.recommendList"></home-recommend>
+        <home-weekend :weekendList="data.weekendList"></home-weekend>
     </section>
 </template>
 <script>

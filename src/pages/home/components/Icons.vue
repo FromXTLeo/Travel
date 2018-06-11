@@ -52,7 +52,7 @@ export default {
     @import '~styles/mixins.styl';
     .icon-box
         overflow hidden
-        padding-bottom 50%
+        padding-bottom 52%
         height 0
         // background-color $bgcolor
         border-top 1px solid #fefefe
