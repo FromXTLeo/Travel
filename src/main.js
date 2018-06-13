@@ -7,6 +7,7 @@ import 'styles/reset.css';
 import 'styles/border.css';
 import 'styles/iconfont.css';
 import fastclick from 'fastclick'
+import store from './store'
 import VueAwesomeSwiper from 'vue-awesome-swiper'
 import 'swiper/dist/css/swiper.css'
 //解决某些机型click事件延迟bug
@@ -18,6 +19,7 @@ Vue.use(VueAwesomeSwiper)
 new Vue({
   el: '#app',
   router,
+  store,
   components: { App },
   template: '<App/>'
 })
