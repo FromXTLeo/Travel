@@ -7,8 +7,7 @@
                     <img class="item-img" :src="item.itemsrc" alt="">
                     <div class="item-content">
                         <p class="item-content-title">{{item.itemtitle}}</p>
-                        <p class="item-content-text">{{item.itemtext}}</p>
-                        <button class="item-content-button">查看详情</button>
+                        <p class="item-content-text">{{item.itemtext}}</p>                        
                     </div>
                 </li>
             </ul>            
@@ -32,16 +31,12 @@ export default {
         background-color #eee
         text-indent 15px
         line-height .8rem        
-    .item
-        display flex
-        height 1.9rem
+    .item        
+        height 4.04rem
         overflow hidden
         .item-img
-            width 1.7rem
-            height 1.7rem
-            padding .1rem
-        .item-content
-            flex 1
+            width 100%                        
+        .item-content            
             padding .1rem
             min-width 0
             .item-content-title
@@ -50,7 +45,7 @@ export default {
                 ellipsis()
             .item-content-text
                 line-height .4rem
-                color #cccccc
+                color #aaa
                 ellipsis()
             .item-content-button   
                 line-height .44rem
