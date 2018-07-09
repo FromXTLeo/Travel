@@ -4,10 +4,10 @@
         <div>
             <ul>
                 <router-link tag="li" class="border-bottom item" v-for="item in recommendList" :key="item.key" :to="'/detail/'+item.id">
-                    <img class="item-img" :src="item.itemsrc" alt="">
+                    <img class="item-img" :src="item.imgUrl" alt="">
                     <div class="item-content">
-                        <p class="item-content-title">{{item.itemtitle}}</p>
-                        <p class="item-content-text">{{item.itemtext}}</p>
+                        <p class="item-content-title">{{item.title}}</p>
+                        <p class="item-content-text">{{item.desc}}</p>
                         <button class="item-content-button">查看详情</button>
                     </div>
                 </router-link>

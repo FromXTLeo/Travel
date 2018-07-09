@@ -6,6 +6,7 @@
             @touchstart.prevent="handleTouchStart"
             @touchmove="handleTouchMove"
             @touchend="handleTouchEnd"
+            :key="item.id"
         >
         {{key}}
         </li>              

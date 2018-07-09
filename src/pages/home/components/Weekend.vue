@@ -4,10 +4,10 @@
         <div>
             <ul>
                 <li class="border-bottom item" v-for="item in weekendList" :key="item.key">
-                    <img class="item-img" :src="item.itemsrc" alt="">
+                    <img class="item-img" :src="item.imgUrl" alt="">
                     <div class="item-content">
-                        <p class="item-content-title">{{item.itemtitle}}</p>
-                        <p class="item-content-text">{{item.itemtext}}</p>                        
+                        <p class="item-content-title">{{item.title}}</p>
+                        <p class="item-content-text">{{item.desc}}</p>                        
                     </div>
                 </li>
             </ul>            

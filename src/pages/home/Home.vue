@@ -1,7 +1,7 @@
 <template>
     <section>        
         <home-header></home-header>
-        <home-swiper :imgList="data.imgList"></home-swiper>
+        <home-swiper :imgList="data.swiperList"></home-swiper>
         <home-icons :iconList="data.iconList"></home-icons>
         <home-recommend :recommendList="data.recommendList"></home-recommend>
         <home-weekend :weekendList="data.weekendList"></home-weekend>
@@ -33,14 +33,15 @@ export default {
         },
         methods:{
             getHomeData(){
-                axios.get('/api/index.json?city='+this.city).then(
+                axios.get('/api/index.json?city='+this.city).then(                    
                     this.getHomeDataSuc
                 )
             },
             getHomeDataSuc(res){
                 if(res.data.ret&&res.data)
                 {
-                    this.data=res.data
+                    console.log(res.data)
+                    this.data=res.data.data               
                     
                 }
             }
