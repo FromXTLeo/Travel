@@ -1,30 +1,18 @@
-# travel
+仿去哪儿网练手项目，未完成
 
-> A Vue.js project
+1.Clone到本地
 
-## Build Setup
+    git clone https://github.com/FromXTLeo/Travel.git
 
-``` bash
-# install dependencies
-npm install
+2.安装依赖
 
-# serve with hot reload at localhost:8080
-npm run dev
+    npm i
 
-# build for production with minification
-npm run build
+3.运行项目
 
-# build for production and view the bundle analyzer report
-npm run build --report
+    npm run dev
 
-# run unit tests
-npm run unit
+4.发布环境
 
-# run e2e tests
-npm run e2e
+    npm run build
 
-# run all tests
-npm test
-```
-
-For a detailed explanation on how things work, check out the [guide](http://vuejs-templates.github.io/webpack/) and [docs for vue-loader](http://vuejs.github.io/vue-loader).

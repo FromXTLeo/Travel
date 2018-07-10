@@ -20,18 +20,18 @@ export default {
   computed:{
       pages(){
         if(this.iconList)
-         {
-        const pages=[]        
-        this.iconList.forEach((item,index)=>{
-            const page =Math.floor(index/8)
-            if(!pages[page])
-            {
-                pages[page]=[]
-            }
-            pages[page].push(item)
+        {
+            const pages=[]        
+            this.iconList.forEach((item,index)=>{
+                const page =Math.floor(index/8)
+                if(!pages[page])
+                {
+                    pages[page]=[]
+                }
+                pages[page].push(item)
            
-        })
-        return pages
+            })
+            return pages
         }
       }
     },

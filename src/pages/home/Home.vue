@@ -39,10 +39,8 @@ export default {
             },
             getHomeDataSuc(res){
                 if(res.data.ret&&res.data)
-                {
-                    console.log(res.data)
-                    this.data=res.data.data               
-                    
+                {                    
+                    this.data=res.data.data                                   
                 }
             }
         },

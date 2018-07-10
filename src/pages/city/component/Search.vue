@@ -5,7 +5,7 @@
         </div>  
         <div class="search-list" ref="List" v-show="keyword">
             <ul>
-                <li class="item border-bottom" @click="handleClickCity(item.name)" v-for="item in searchList">
+                <li class="item border-bottom" @click="handleClickCity(item.name)" :key="item.id" v-for="item in searchList">
                     {{item.name}}
                 </li>
                 <li class="notdata" v-show="notSearchData">

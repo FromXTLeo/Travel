@@ -10,12 +10,12 @@
             <div class="area">
                 <div class="title">热门城市</div>
                 <div class="area-container" >
-                    <button class="area-button" @click="handleClickCity(item.name)" v-for="item in listData.hotCities" >{{item.name}}</button>                    
+                    <button class="area-button" @click="handleClickCity(item.name)" v-for="item in listData.hotCities" :key="item.id" >{{item.name}}</button>                    
                 </div>
             </div>
-            <div class="area" v-for="(item,key) in listData.cities">
+            <div class="area" v-for="(item,key) in listData.cities" :key="item.id">
                 <div class="title" :ref="key">{{key}}</div>           
-                <p class="area-text border-bottom" @click="handleClickCity(items.name)" v-for="items in item">{{items.name}}</p>           
+                <p class="area-text border-bottom" @click="handleClickCity(items.name)" :key="items.id" v-for="items in item">{{items.name}}</p>           
                                           
             </div>            
        </div>
@@ -37,7 +37,7 @@ export default {
     mounted(){
         const _this =this
         this.scroll = new BScroll(_this.$refs.wrapper)       
-        bus.$on('handleClick',(eee)=>{            
+        bus.$on('handleClick',(eee)=>{                        
            this.scroll.scrollToElement(_this.$refs[eee][0])
         })
     },
